@@ -9,7 +9,6 @@ from github import Github
 from lxml.etree import CDATA
 from marko.ext.gfm import gfm as marko
 
-
 BACKUP_DIR = "BACKUP"
 ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
@@ -24,6 +23,13 @@ IGNORE_LABELS = (
     + ABOUT_LABELS
     + THINGS_LABELS
 )
+
+MD_HEAD = """## [Gitblog](https://edwarddavis9.github.io/git-blog/)
+My personal blog using issues and GitHub Actions 
+![image](https://github.com/user-attachments/assets/a168bf11-661e-4566-b042-7fc9544de528)
+[RSS Feed](https://raw.githubusercontent.com/{repo_name}/master/feed.xml)
+"""
+
 
 FRIENDS_TABLE_HEAD = "| Name | Link | Desc | \n | ---- | ---- | ---- |\n"
 FRIENDS_TABLE_TEMPLATE = "| {name} | {link} | {desc} |\n"
@@ -195,6 +201,11 @@ def add_md_recent(repo, md, me, limit=5):
         except Exception as e:
             print(str(e))
 
+def add_md_header(md, repo_name):
+    with open(md, "w", encoding="utf-8") as md:
+        md.write(MD_HEAD.format(repo_name=repo_name))
+        md.write("\n")
+
 
 def add_md_label(repo, md, me):
     labels = get_repo_labels(repo)
@@ -283,6 +294,8 @@ def main(token, repo_name, issue_number=None, dir_name=BACKUP_DIR):
     me = get_me(user)
     repo = get_repo(user, repo_name)
     # add to readme one by one, change order here
+    add_md_header("README.md", repo_name)
+
     for func in [add_md_firends, add_md_top, add_md_recent, add_md_label, add_md_todo]:
         func(repo, "README.md", me)
 
