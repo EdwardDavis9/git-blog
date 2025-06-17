@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/EdwardDavis9/git-blog</id><title>RSS feed of EdwardDavis9's git-blog</title><updated>2025-06-16T17:53:10.192064+00:00</updated><author><name>Edward</name><email>ashleyedward9@outlook.com</email></author><link href="https://github.com/EdwardDavis9/git-blog"/><link href="https://raw.githubusercontent.com/EdwardDavis9/git-blog/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/EdwardDavis9/git-blog/issues/1</id><title>测试 issue</title><updated>2025-06-16T17:53:10.555251+00:00</updated><content type="html"><![CDATA[<h2>背景</h2>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/EdwardDavis9/git-blog</id><title>RSS feed of EdwardDavis9's git-blog</title><updated>2025-06-17T00:24:16.455459+00:00</updated><author><name>Edward</name><email>ashleyedward9@outlook.com</email></author><link href="https://github.com/EdwardDavis9/git-blog"/><link href="https://raw.githubusercontent.com/EdwardDavis9/git-blog/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/EdwardDavis9/git-blog/issues/1</id><title>测试 issue</title><updated>2025-06-17T00:24:16.726324+00:00</updated><content type="html"><![CDATA[<h2>背景</h2>
 <p>接下来我想要通过 issue 来编写我自己的博客。</p>
 <p>更新了第一篇测试博客的内容。</p>
 <p>为什么我的 <strong>GIT ACTION</strong> 总是失败呢？</p>
 <p>按理说， 配置不应该出现问题才对啊。</p>
 <p>那现在呢，设置好了吗？</p>
 <p>现在设置好了，可还是没有看到 <strong>README</strong> 文件啊。</p>
-]]></content><link href="https://github.com/EdwardDavis9/git-blog/issues/1"/><published>2025-06-16T13:56:20+00:00</published></entry></feed>
+]]></content><link href="https://github.com/EdwardDavis9/git-blog/issues/1"/><category term="invalid"/><published>2025-06-16T13:56:20+00:00</published></entry></feed>
