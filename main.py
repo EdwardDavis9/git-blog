@@ -24,9 +24,9 @@ IGNORE_LABELS = (
     + THINGS_LABELS
 )
 
-MD_HEAD = """## [Gitblog](https://edwarddavis9.github.io/git-blog/)
-My personal blog using issues and GitHub Actions 
-![image](https://github.com/user-attachments/assets/a168bf11-661e-4566-b042-7fc9544de528)
+MD_HEAD = """## [Gitblog](https://edwarddavis9.github.io/git-blog/)\n
+My personal blog using issues and GitHub Actions\n
+![image](https://github.com/user-attachments/assets/a168bf11-661e-4566-b042-7fc9544de528)\n
 [RSS Feed](https://raw.githubusercontent.com/{repo_name}/master/feed.xml)
 """
 
